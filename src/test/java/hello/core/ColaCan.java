@@ -3,14 +3,14 @@ package hello.core;
 public class ColaCan {
 
     private static int numCreated;
-//    private int remainMl;
+    private int remainMl;
 
-    public ColaCan() {
+    public ColaCan(int remainMl) {
         ++numCreated;
-//        this.remainMl = remainMl;
+        this.remainMl = remainMl;
     }
 
-    public void printStatus() {
+    public static void printStatus() {
         System.out.println("# Cola Produced: " + numCreated);
     }
 
